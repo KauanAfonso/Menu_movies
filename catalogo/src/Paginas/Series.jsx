@@ -1,10 +1,10 @@
-import estilos from './Series.module.css';
+import { Serie } from '../componentes/Series';
 
 export function Series() {
     return (
     
-    <main className={estilos.container}>
-        <h2 className={estilos.titulo}>Serie</h2>        
+    <main>
+        <Serie />
     </main>  
     
     );

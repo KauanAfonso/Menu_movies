@@ -6,21 +6,29 @@ import { Link } from 'react-router-dom';
 export function BarraNavegacao(){
     return (
         <nav className={estilos.container}>
+
+
+            <h2>Kauan prime</h2>
+
             <ul>
-                <Link to='/'> //
-                    <li>
-                        Home
-                        <span className="material-symbols-outlined">home</span>
-                    </li>
+                <Link to='/'> 
+                    <li>Home</li>
                 </Link>
 
                 <Link to='series'>
-                    <li>Seires<span className="material-symbols-outlined">tv</span></li>
+                    <li>Series</li>
                 </Link>
 
+                <li>Sobre</li>
+
                 <Link to='perfil'>
-                    <li>Perfil<span className="material-symbols-outlined">person</span></li>
+                    <li>Perfil</li>
                 </Link>
+
+                <li><span class="material-symbols-outlined">
+                    search
+                </span></li>
+
             </ul>
         </nav>
     )
