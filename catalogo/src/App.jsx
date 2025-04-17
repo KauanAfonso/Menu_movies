@@ -1,23 +1,15 @@
-import { Cabecalho } from './componentes/Cabecalho';
-import { BarraNavegacao } from './componentes/BarraNavecagao';
-import { Conteudo } from './componentes/Conteudo';
-import { Footer } from './componentes/Footer';
-
+import React from "react";
+import { BrowserRouter, Route } from "react-router-dom"; // permite a navegação entre os componentes
+import { Rotas } from "./Rotas/Rotas"; //importando minhas rotas
 
 //estrutura basica para usar React é atraves das funções
 function App() {
 
   //para trazer o resultado da função o que quero no Return que deveter apenas 1 componentete
   return (
-    //chamando o estilo pela importação estilos
-    //Tags fantasmas servem para que eu consiga usar duas tags no mesmo componente
-    <>
-      <BarraNavegacao />
-      <Cabecalho />
-      <Conteudo />
-      <Footer/>
-      
-    </>
+    <BrowserRouter>
+      <Rotas/>
+    </BrowserRouter>
   )
 }
 

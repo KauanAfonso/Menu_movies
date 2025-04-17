@@ -2,7 +2,7 @@ import axios from "axios";
 import React, {useState, useEffect} from "react";
 import { Card } from "./Card";
 import { Modal } from "./Modal";
-import estilos from "./Lista.module.css"
+import estilos from "./Lista.module.css";
 
 
 const APi_URl = 'https://api.themoviedb.org/3';
