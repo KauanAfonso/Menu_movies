@@ -6,8 +6,7 @@ import { Link } from 'react-router-dom';
 export function BarraNavegacao(){
     return (
         <nav className={estilos.container}>
-
-
+            
             <h2>Kauan prime</h2>
 
             <ul>

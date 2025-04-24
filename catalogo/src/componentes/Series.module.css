@@ -2,6 +2,7 @@ figure {
     display: flex;
     flex-wrap: wrap;
     width: auto;
+    padding: 8rem;
     gap: 2rem;
     justify-content: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;

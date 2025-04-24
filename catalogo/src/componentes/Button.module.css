@@ -1,0 +1,10 @@
+.btn_primary{
+   background-color: rgba(74, 213, 255, 0.904);
+   padding: .6rem 3rem ;
+}
+
+.btn_second{
+    border:2px solid rgba(74, 213, 255, 0.904);
+    background-color: transparent;
+    padding: .6rem 3rem ;
+}

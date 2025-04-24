@@ -28,17 +28,13 @@ export function Serie() {
 
     return (
         <div>
-            
+            <h1>Series</h1>
             <figure>
                 {series.map(element => (
                     <Card key={element.id}
-                
                         element={element}
                         onOpenModal={handleOpenModal}
-    
-                    />
-
-                                       
+                    />                  
                 ))}
                 
             </figure>

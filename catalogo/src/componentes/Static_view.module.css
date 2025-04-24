@@ -1,0 +1,62 @@
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 36px;
+    color: rgb(24, 95, 177);
+}
+
+.imagem_main {
+    background-image: url('/assets/avatar.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 80vh;
+    width: 100%;
+}
+
+.div_shadow {
+    content: '';
+    /* Necessário para criar o pseudo-elemento */
+    position: absolute;
+    /* Posiciona o pseudo-elemento sobre a imagem */
+    width: 99vw;
+    height: 80vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Cor preta com 50% de opacidade */
+    z-index: 1;
+
+}
+
+.show_movie {
+    z-index: 3 !important;
+    /* background-color: rgb(14, 14, 14); */
+    position: relative;
+    top: 25rem;
+    left: 20%;
+    width: 50%;
+    text-align: justify;
+
+
+
+}
+
+.show_movie h2 {
+    color: white;
+    font-size: 3em;
+    font-family: "Oswald", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800 !important;
+    font-style: normal;
+}
+
+.show_movie p {
+    color: white;
+    font-size: 1em;
+}
+
+.div_btn_watch {
+    margin-top: 1rem;
+    z-index: 3;
+    display: flex;
+    gap: 1rem;
+}

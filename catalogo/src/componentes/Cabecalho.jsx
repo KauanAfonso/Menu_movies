@@ -1,10 +1,12 @@
 import estilos from './Cabecalho.module.css';
 
+import { Static_view } from './Static_view';
+
 //estrutura basica para os componentes
-export function Cabecalho() {
+export function Cabecalho({ title, description, imgBackground }) {
     return (
         <header className={estilos.container}>
-            <h1>KauanFlix</h1>
+            <Static_view title={title} description={description} imgBackground={imgBackground}/>
         </header>
     )
 }
