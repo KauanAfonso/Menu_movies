@@ -7,7 +7,7 @@ export function BarraNavegacao(){
     return (
         <nav className={estilos.container}>
             
-            <h2>Kauan prime</h2>
+            <h2 className={estilos.logo}>Primeuan</h2>
 
             <ul>
                 <Link to='/'> 
@@ -24,9 +24,13 @@ export function BarraNavegacao(){
                     <li>Perfil</li>
                 </Link>
 
-                <li><span class="material-symbols-outlined">
-                    search
-                </span></li>
+                <li>
+                <div className={estilos.inputWrapper}>
+                    <input type="text" className={estilos.campoBusca} placeholder="Pesquisar..." />
+                    <span className="material-symbols-outlined">search</span>
+                </div>
+                </li>
+
 
             </ul>
         </nav>

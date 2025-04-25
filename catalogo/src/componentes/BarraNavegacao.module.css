@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: rgba(74, 213, 255, 0.904);
+    background-color: rgba(31, 192, 241, 0.836);
     height: 80px;
     z-index: 2;
 }
@@ -14,6 +14,8 @@ ul{
     display: flex;
     flex-direction: row;
     z-index: 2;
+    align-items: center;
+    justify-content: center;
  
 }
 
@@ -29,7 +31,43 @@ li a{
 
 }
 
-h2{
+.logo{
     color: beige;
     z-index: 2;
+    font-weight: 500;
+
 }
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.campoBusca {
+    padding: 8px 35px 8px 12px;
+    border: none;
+    border-radius: 20px;
+    font-size: 14px;
+    background-color: rgb(255, 255, 255);
+    color: #333;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.2);
+    outline: none;
+}
+
+/* Aqui o ícone ainda não precisa estar no módulo se não for estilizado diretamente */
+.material-symbols-outlined {
+    position: absolute;
+    right: 18px;
+    color: #555;
+    cursor: pointer;
+    font-size: 20px;
+
+}
+

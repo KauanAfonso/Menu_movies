@@ -19,7 +19,7 @@ h1 {
     /* Necessário para criar o pseudo-elemento */
     position: absolute;
     /* Posiciona o pseudo-elemento sobre a imagem */
-    width: 99vw;
+    width: 99.2vw;
     height: 80vh;
     background-color: rgba(0, 0, 0, 0.5);
     /* Cor preta com 50% de opacidade */
@@ -33,7 +33,7 @@ h1 {
     position: relative;
     top: 25rem;
     left: 20%;
-    width: 50%;
+    width: 40%;
     text-align: justify;
 
 
@@ -59,4 +59,18 @@ h1 {
     z-index: 3;
     display: flex;
     gap: 1rem;
+}
+
+
+@media (max-width: 1300px) {
+    .show_movie {
+
+        top: 5rem;
+        left: 20%;
+        width: 40%;
+    
+    
+    
+    
+    }
 }
