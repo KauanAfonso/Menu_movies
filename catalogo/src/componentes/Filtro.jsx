@@ -1,9 +1,7 @@
-import { useState } from "react";
-
+import estilos from "./Filtro.module.css"
 
 
 export function Filtro({ onSelecionar }){
-
 
 
     const filtros = [
@@ -14,14 +12,16 @@ export function Filtro({ onSelecionar }){
     ]
 
     return(
-        <div>
+        <div className={estilos.div_filtro}>
+            <div className={estilos.div_background}>
+
             {filtros.map((filtro) =>(
                 <button key={filtro.id} onClick={()=> onSelecionar(filtro.id)}>
                     {filtro.label}
                 </button>
             ))}
         
-
+            </div>
         </div>
     )
 }

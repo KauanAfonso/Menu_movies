@@ -3,6 +3,8 @@ import React, {useState, useEffect} from "react";
 import { Card } from "./Card";
 import { Modal } from "./Modal";
 import { Filtro } from "./Filtro";
+import { Paginacao } from "./Paginacao";
+import estilos from "./Filmes.module.css";
 
 
 
@@ -17,7 +19,20 @@ export function Filmes() {
     const [SelectedMovie, setSelectedMovie] = useState(null);
 
     const [filtro, setFitro] = useState('popular');
+
+    const[paginacao, setPaginacao] = useState(1);
     
+
+    const next_paginacao = () =>{
+        setPaginacao(atual => atual+ 1)
+        window.scrollTo({ top: 650, left: 0})
+    }
+
+    const back_pagination = () =>{
+        setPaginacao(atual => (atual <= 1 ? 1 : atual - 1)); // Garante que não vá abaixo de 1
+        window.scrollTo({ top: 650, left: 0 });
+    }   
+
     //abindo um modal e passando um movie como parametro
     const handleOpenModal = (movie) => {
         setSelectedMovie(movie)
@@ -32,7 +47,7 @@ export function Filmes() {
     //()parametros, {}script de programação, []dependencias
     //O Efect é a renderização do react
     useEffect(() => {
-        axios.get(`${APi_URl}/movie/${filtro}?api_key=${API_KEY}&language=pt-BR&Page=3`)
+        axios.get(`${APi_URl}/movie/${filtro}?api_key=${API_KEY}&language=pt-BR&page=${paginacao}`)
             .then(response => {
                 console.log(response.data.results);
                 setMovies(response.data.results);
@@ -40,12 +55,13 @@ export function Filmes() {
             .catch(error => {
                 console.log('erro: ' + error);
             })
-    }, [filtro]);
+    }, [filtro, paginacao]);
 
     return (
         <div>
-            <h1>hellow</h1>
-            <Filtro onSelecionar={setFitro}/>
+            
+                <Filtro onSelecionar={setFitro}/>
+            
             <figure>
                 {movies.map(element => (
                     <Card key={element.id}
@@ -56,6 +72,8 @@ export function Filmes() {
                 ))}
             </figure>
             {SelectedMovie &&(<Modal element={SelectedMovie} onClose={handleCloseModal}/>)}
+
+            <Paginacao sumPagination={next_paginacao} backPagination={back_pagination}/>
         </div>
     )
 

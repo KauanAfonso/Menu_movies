@@ -1,0 +1,21 @@
+.div_filtro{
+    display: flex;
+    justify-content: space-between;
+    gap: 5rem;
+    /* margin-top: 5rem; */
+   
+}
+
+.div_background{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-around;
+        background-color: rgba(31, 192, 241, 0.836);
+        padding: 1rem;
+    }
+
+.div_filtro button{
+    padding: 15px;
+    
+}
