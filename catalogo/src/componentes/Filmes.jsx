@@ -2,6 +2,7 @@ import axios from "axios";
 import React, {useState, useEffect} from "react";
 import { Card } from "./Card";
 import { Modal } from "./Modal";
+import { Filtro } from "./Filtro";
 
 
 
@@ -14,6 +15,8 @@ export function Filmes() {
     const [movies, setMovies] = useState([]);
 
     const [SelectedMovie, setSelectedMovie] = useState(null);
+
+    const [filtro, setFitro] = useState('popular');
     
     //abindo um modal e passando um movie como parametro
     const handleOpenModal = (movie) => {
@@ -24,10 +27,12 @@ export function Filmes() {
         setSelectedMovie(null)
     }
 
+
+
     //()parametros, {}script de programação, []dependencias
     //O Efect é a renderização do react
     useEffect(() => {
-        axios.get(`${APi_URl}/movie/popular?api_key=${API_KEY}&language=pt-BR&Page=3`)
+        axios.get(`${APi_URl}/movie/${filtro}?api_key=${API_KEY}&language=pt-BR&Page=3`)
             .then(response => {
                 console.log(response.data.results);
                 setMovies(response.data.results);
@@ -35,10 +40,12 @@ export function Filmes() {
             .catch(error => {
                 console.log('erro: ' + error);
             })
-    }, []);
+    }, [filtro]);
 
     return (
         <div>
+            <h1>hellow</h1>
+            <Filtro onSelecionar={setFitro}/>
             <figure>
                 {movies.map(element => (
                     <Card key={element.id}

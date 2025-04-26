@@ -62,15 +62,37 @@ h1 {
 }
 
 
-@media (max-width: 1300px) {
+
+
+@media (max-width: 1700px) {
     .show_movie {
 
-        top: 5rem;
+        top: 15rem;
         left: 20%;
         width: 40%;
-    
-    
-    
-    
+   
+    }
+}
+
+
+
+@media (max-width: 1200px) {
+    .show_movie {
+
+        top: 18rem;
+        left: 20%;
+        width: 40%;
+   
+    }
+}
+
+
+@media (max-width: 940px) {
+    .show_movie {
+
+        top: 10rem;
+        left: 20%;
+        width: 40%;
+   
     }
 }
