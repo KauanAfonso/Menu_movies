@@ -18,7 +18,7 @@ export function Static_view({ title, description, imgBackground } ) {
 
                     <div className={estilos.div_btn_watch}>
                         <Button text={"Assistir"} />
-                        <Button_Second text={"Assistir"} />
+                        <Button_Second text={"Ver detalhes"} />
                     </div>
 
                 </div>

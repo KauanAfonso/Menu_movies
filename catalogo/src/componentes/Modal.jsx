@@ -16,10 +16,11 @@ export function Modal({ element, onClose}) {
                     <img className={estilos.imgModal} src={`http://image.tmdb.org/t/p/w500/${element.poster_path}`} />
                     <div className={estilos.imgDetalhes}>
                         <ul>
+                            <li>{`Descrição: ${element.overview}`}</li>
                             <li>{`Popularidade: ${element.popularity}`}</li>
                             <li>{`Data de lançamento : ${element.release_date}`}</li>
                             <li>{`Quantidade de Votos: ${element.vote_count}`}</li>
-                            <li>{`Descrição: ${element.overview}`}</li>
+                            <li>{`Nota: ${element.vote_average}`}</li>
                             
                         </ul>
                     </div>

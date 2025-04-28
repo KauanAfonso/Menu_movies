@@ -40,15 +40,27 @@
 }
 
 .modalContainer h2 {
-    color: blanchedalmond;
+    color: rgb(7, 160, 194);
     text-align: center;
     flex-grow: 1;
 }
 
 .imgDetalhes {
     display: flex;
+  
     gap: 20px;
 }
+
+.imgDetalhes ul{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items:baseline;
+    gap: .5rem;
+
+}
+
 
 .imgModal {
     width: 40%;
