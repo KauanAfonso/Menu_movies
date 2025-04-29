@@ -1,7 +1,8 @@
 .footer {
-    background-color: #1f1f1f;
+    background-color: #000000;
     color: #fff;
-    
+    margin-top: 5rem;
+    box-shadow: rgb(66, 151, 241) 0px 2px 8px 0px;
   }
   
 .container {
@@ -9,7 +10,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 1200px;
-    padding: 40px 20px 20px;
+    padding: 70px 40px 40px;
     margin: 0 auto;
   }
   

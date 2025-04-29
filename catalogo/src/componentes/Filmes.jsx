@@ -22,6 +22,10 @@ export function Filmes() {
 
     const[paginacao, setPaginacao] = useState(1);
     
+    //definie a paginação como 1 quando filtra
+    useEffect(() =>{
+        setPaginacao(1)
+    }, [filtro])
 
     const next_paginacao = () =>{
         setPaginacao(atual => atual+ 1)
@@ -73,7 +77,10 @@ export function Filmes() {
             </figure>
             {SelectedMovie &&(<Modal element={SelectedMovie} onClose={handleCloseModal}/>)}
 
-            <Paginacao sumPagination={next_paginacao} backPagination={back_pagination}/>
+
+            <Paginacao text={paginacao} sumPagination={next_paginacao} backPagination={back_pagination}/>
+
+          
         </div>
     )
 

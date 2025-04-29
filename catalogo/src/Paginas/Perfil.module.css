@@ -1,8 +1,48 @@
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #cf0000 !important;
+    background-color: #080808 !important;
     height: auto;
+    color: white;
 
+}
+
+.meu_perfil{
+    margin-top: 5rem;
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.div_perfil{
+    display: flex;
+    color: white;
+    display: flex;
+    gap: 1rem;
+    padding: 3rem;
+}
+
+.div_perfil img{
+    border-radius: 50%;
+    width: 100%;
+
+}
+
+.div_imagem{
+    max-width: 300px;
+    max-height: 300px;
+}
+
+.div_campo{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+    gap: .4rem;
+
+    
+}
+
+.div_campo p{
+    font-weight: 300;
 }

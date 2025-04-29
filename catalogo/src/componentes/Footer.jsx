@@ -4,7 +4,6 @@ import { Copy } from './copy';
 export function Footer() {
     return (
         <footer className={estilos.footer}>
-            <hr />
             <div className={estilos.container}>
                 <div className={estilos.logoArea}>
                     <h2 className={estilos.logo}>Primeuan</h2>
