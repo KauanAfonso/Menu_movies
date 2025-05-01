@@ -1,12 +1,42 @@
-# React + Vite
+# 🎬 Primeuan - Catálogo de Filmes - SENAI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Projeto desenvolvido em React, consumindo a API do **BD Movies** para exibir um catálogo de filmes.
 
-Currently, two official plugins are available:
+## 🔍 Sobre o Projeto
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O **Primeuan** é uma aplicação web que exibe uma lista de filmes, permitindo aos usuários explorar os títulos disponíveis de forma rápida e intuitiva. A interface foi construída com **React** e consome dados da **API BD Movies**.
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologias Utilizadas
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React
+- JavaScript (ES6+)
+- Axios (para requisições HTTP)
+- CSS (ou styled-components, se aplicável)
+
+## 📸 Imagem do Projeto
+
+![Tela Inicial](src/assets/inicial.png)
+![Tela Inicial](src/assets/inicial2.png)
+![Tela Inicial](src/assets/inicia4.png)
+![Tela Inicial](src/assets/inicia3.png)
+
+## 📦 Como Rodar o Projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/primeuan.git
+   ```
+
+2. Entre em catalogo:
+   ```bash
+   cd catalogo
+   ```
+
+2. Instale as dependencias:
+   ```bash
+   npm install
+   ```
+2. Start o projeto e acesse em http://localhost:3000:
+   ```bash
+    npm start
+   ```
