@@ -1,8 +1,9 @@
 import estilos from './Paginacao.module.css';
 
+
 export function Paginacao({sumPagination, backPagination, text}){
     
-
+    //retorna o componente de paginação, que tem os botões de voltar e avançar, além do texto que mostra a página atual.
     return(
 
         <div className={estilos.div_main}>

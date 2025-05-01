@@ -2,11 +2,13 @@ import estilos from './Modal.module.css'
 
 export function Modal({ element, onClose}) {
     
+    //caso for nulo, retorna null, ou seja não renderiza nada.
     if (!element) {
         return null
     }
     console.log(element);
 
+    //retorna o modal com as informações do filme ou série selecionada. Utiliza onCloe para fechar o modal.
     return (
         <div className={estilos.modalback}>
             <div className={estilos.modalContainer}>

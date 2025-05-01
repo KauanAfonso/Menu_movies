@@ -2,6 +2,8 @@ import estilos from './Footer.module.css';
 import { Copy } from './copy';
 
 export function Footer() {
+    //retorna o footer com as informações de contato e redes sociais.
+    //O footer é dividido em duas partes, a primeira com as informações de contato e redes sociais, e a segunda com o componente copyright.
     return (
         <footer className={estilos.footer}>
             <div className={estilos.container}>

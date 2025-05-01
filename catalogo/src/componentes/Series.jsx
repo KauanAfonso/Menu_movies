@@ -10,6 +10,7 @@ const API_key = 'af26cce282aecf5c6cc39a264f29d0a7';
 const API_URL = 'https://api.themoviedb.org/3';
 
 export function Serie() {
+    //cria os estados para as variaveis que serão utilizadas
     const [series, setSeries] = useState([]);
     const [selectedSerie, setSelectedSerie] = useState(null);
     const [filtro, setFitro] = useState('popular')
@@ -19,6 +20,19 @@ export function Serie() {
     useEffect(() =>{
         setPaginacao(1)
     }, [filtro])
+
+    /*
+    
+    
+    Logo a seguir temos a função next_paginacao, que é chamada quando o usuário clica no botão "Próxima Página".
+    Ela incrementa o estado de paginação em 1 e rola a página para baixo, para que o usuário veja os novos resultados.
+
+    A função back_pagination é chamada quando o usuário clica no botão "Página Anterior". Ela decrementa o estado de paginação em 1,
+    mas garante que não vá abaixo de 1. Também rola a página para baixo.
+    Isso é útil para evitar que o usuário tenha que rolar manualmente para ver os resultados anteriores.
+    
+    
+    */
 
     const next_paginacao = () =>{
         setPaginacao(atual => atual+ 1)
@@ -30,7 +44,16 @@ export function Serie() {
         window.scrollTo({ top: 650, left: 0 });
     }   
 
-    //abindo um modal e passando um serie como parametro
+    /*
+    
+    
+    A função handleOpenModal é chamada quando o usuário clica em um cartão de série. 
+    Ela define o estado selectedSerie com a série selecionada, o que faz com que o modal seja exibido.
+
+    A função handleCloseModal é chamada quando o usuário clica no botão de fechar no modal.
+    Ela redefine o estado selectedSerie para null, fazendo com que o modal seja fechado.
+    
+    */
     const handleOpenModal = (series) => {
         setSelectedSerie(series)
     }
@@ -41,6 +64,8 @@ export function Serie() {
 
    
 
+    //A função useEffect é chamada quando o componente é montado ou quando o estado de filtro ou paginação muda.
+    //Ela faz uma requisição para a API do The Movie Database (TMDb) para obter as séries de TV com base no filtro e na paginação selecionados.
     useEffect(() => {
         axios.get(`${API_URL}/tv/${filtro}?api_key=${API_key}&page=${paginacao}`)
             .then(response => setSeries(response.data.results))

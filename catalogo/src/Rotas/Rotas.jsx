@@ -10,7 +10,7 @@ import { Filmes } from "../componentes/Filmes";
 
 export function Rotas() {
     return (
-        //Minhas rotas, recebe um conjunto de rotas
+        //Minhas rotas, recebe um conjunto de rotas -> Routes que recebe rotas especificas.
         <Routes>
             
             <Route path='/' element={<Inicial/> }>

@@ -10,8 +10,10 @@ export function Inicial() {
     
     //verificando se está na page / para aparecer o cabecalho
     const location = useLocation();
-    const isHomePage = location.pathname === '/'; 
+    const isHomePage = location.pathname === '/';  //True or False
 
+    //Retorna a estrutura da pagina e o cabeçalho com as informações especificadas para a pagina home 
+    //se ele estiver na home page. Se não estiver, não terá cabeçalho.
     return (
         <>
             <BarraNavegacao />
