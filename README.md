@@ -15,10 +15,10 @@ O **Primeuan** é uma aplicação web que exibe uma lista de filmes, permitindo 
 
 ## 📸 Imagem do Projeto
 
-![Tela Inicial](cataogo/src/assets/inicial.png)
-![Tela Inicial](cataogo/src/assets/inicial2.png)
-![Tela Inicial](cataogo/src/assets/inicial4.png)
-![Tela Inicial](cataogo/src/assets/inicial3.png)
+![Tela Inicial](catalogo/src/assets/inicial.png)
+![Tela Inicial](catalogo/src/assets/inicial2.png)
+![Tela Inicial](catalogo/src/assets/inicial4.png)
+![Tela Inicial](catalogo/src/assets/inicial3.png)
 
 ## 📦 Como Rodar o Projeto
 
